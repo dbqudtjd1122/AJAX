@@ -30,10 +30,17 @@ public class ControllerMenu {
 		return "menu";
 	}
 	
-	// AJAX
+	// AJAX XML
 	@RequestMapping(value = "/menu.get", method = RequestMethod.GET, produces = "application/xml; charset=utf-8")
 	public @ResponseBody Menus menuGet() {
 		
+		return mDao.getMenuXML();
+	}
+	
+	// AJAX JSON
+	@RequestMapping(value = "/menu.json", method = RequestMethod.GET, produces = "application/json; charset=utf-8")
+	public @ResponseBody Menus menuJson() {
+			
 		return mDao.getMenuXML();
 	}
 	

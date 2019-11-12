@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 // DB에 있는 데이터 하나를 표현 가능
-@XmlRootElement
+//@XmlRootElement
 public class Menu {
 
 	private String m_name;
@@ -32,7 +32,7 @@ public class Menu {
 		return m_name;
 	}
 	
-	@XmlElement
+	//@XmlElement
 	public void setM_name(String m_name) {
 		this.m_name = m_name;
 	}
@@ -41,7 +41,7 @@ public class Menu {
 		return m_price;
 	}
 	
-	@XmlElement
+	//@XmlElement
 	public void setM_price(BigDecimal m_price) {
 		this.m_price = m_price;
 	}
